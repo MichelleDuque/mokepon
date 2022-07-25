@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #005555
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(200, 192, 192)
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokemon{
+    width: 180px;
+    height: 100px;
+    background: #069A8E;
+    padding: 10px;
+    box-sizing: border-box; /* Para que el padding no afecte el tamaño de la caja */
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.tarjeta-de-mokemon img{
+    width: 80px;
+}
+
+input{
+    display: none;
+}
+
+#boton-mascota{
+    color: black;
+    background-color: #F7FF93;
+    width: 210px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-top: 40px;
+    border: 1px solid grey;
+    font-family: 'Press Start 2P', cursive;
+}
