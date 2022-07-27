@@ -16,6 +16,7 @@ body{
 .titulo {
     color: white;
     font-size: 32px;
+    text-align: center;
 }
 
 .subtitulo{
@@ -23,9 +24,10 @@ body{
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
-.tarjetas{
+.tarjetas, .tarjetas-ataques{
     display: flex;
     gap: 10px;
 }
@@ -65,10 +67,16 @@ input{
     display: none;
 }
 
+input:checked + label{
+    background-color: #A1E3D8;
+    border: 5px solid #069A8E;
+}
+
 #seleccionar-ataque{
     flex-direction: column;
     align-items: center;
 }
+
 
 .boton-de-ataque{
     background: #069A8E;
@@ -107,4 +115,22 @@ input{
     background: #069A8E;
     color: white;
     font-family: 'Press Start 2P', cursive;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;       
+    }
+
 }
